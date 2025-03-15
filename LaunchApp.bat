@@ -1,14 +1,21 @@
 @echo off
+setlocal
 cd /d "%~dp0"
 
-.\library\Scripts\python.exe -m streamlit run main.py
+:: Check if 'uv' is installed
+uv --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo uv is not installed. Installing now...
+    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    echo  Installation complete. Relaunch File...
+    TIMEOUT /T 10
+    exit /b
+)
 
-REM Activate the virtual environment
-:: call .venv\Scripts\activate.bat && pty
+:: Run 'uv sync'
+echo Running 'uv sync'...
+uv sync
 
-REM Run the app
-:: app
-
-REM Deactivate the virtual environment (optional)
-:: deactivate
-pause
+:: Run 'uv run streamlit run main.py'
+echo Running 'uv run streamlit run main.py'...
+uv run streamlit run main.py
