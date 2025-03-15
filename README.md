@@ -11,9 +11,7 @@
   - [System Requirements](#system-requirements)
 - [3. Frequently Asked Questions (FAQ)](#3-frequently-asked-questions-faq)
   - [Common Questions](#common-questions)
-- [4. Troubleshooting Guide](#4-troubleshooting-guide)
-  - [Overview](#overview)
-  - [Common Issues \& Solutions](#common-issues--solutions)
+- [4. Common Issues \& Solutions](#4-common-issues--solutions)
 - [5. License Activation and Management Guide](#5-license-activation-and-management-guide)
   - [License Locking](#license-locking)
   - [Moving the App](#moving-the-app)
@@ -24,7 +22,7 @@
   - [Security Measures](#security-measures)
   - [User Consent](#user-consent)
 - [7. Customer Support and Contact Information](#7-customer-support-and-contact-information)
-  - [Overview](#overview-1)
+  - [Overview](#overview)
   - [License, General Inquiries \& Technical Support](#license-general-inquiries--technical-support)
   - [Feedback](#feedback)
 
@@ -94,17 +92,26 @@
 
 ---
 
-## 4. Troubleshooting Guide
-
-### Overview
-Step-by-step solutions for common issues that users might encounter.
-
-### Common Issues & Solutions
+## 4. Common Issues & Solutions
 
 **Issue: The app does not launch when I double-click `LaunchApp.bat`.**  
 **Solution:**  
 - Ensure that your antivirus or security software isn’t blocking the file.  
 - Right-click on `LaunchApp.bat` and select "Run as administrator."
+
+**Issue: I am getting a Blue "Windows Protected Your PC" warning when launching the app.**  
+**Solution:**  
+Windows may block applications that are not signed with a known publisher. To bypass this warning:  
+1. Click **More Info** when the warning message appears.
+  ![](./assets/3_SmartScreen.png)
+2. Click the **Run Anyway** button to allow the application to launch.  
+  ![](./assets/4_SmartScreen.png)
+3. If you want to prevent this warning in the future:  
+   - Right-click `LaunchApp.bat` and select **Properties**.  
+   - Under the **General** tab, look for **Security** at the bottom and check **Unblock** if available.  
+   - Click **Apply** and **OK** to save the changes.  
+4. If your antivirus software blocks the file, add it to the trusted list or whitelist.
+
 
 **Issue: I receive a "file not found" error when entering the file path.**  
 **Solution:**  
