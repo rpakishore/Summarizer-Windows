@@ -1,13 +1,5 @@
-[llm]
-url='http://100.99.54.84:11434/v1'
-key='ollama'
-model='general_small'
+[server]
+url="https://n8n.rpakishore.co.in/webhook/4ebd0a28-5fe9-4847-9341-0f240e979a09"
 
-[gotify]
-url='https://gotify.example.com'
-key='1234567890'
-
-[pdoc_ai]
-llm_baseurl="http://100.99.54.84:11434/v1"
-llm_key="ollama"
-llm_model="code_assist_large"
+[user]
+email="Arun"
