@@ -34,12 +34,12 @@
 
 ### Launching the App
 - Locate the `LaunchApp.bat` file in the app folder.
-  ![](./1_LaunchApp.png)
+  ![](./assets/1_LaunchApp.png)
 - Double-click the `LaunchApp.bat` file to launch the application in your default web browser.
 
 ### Using the App
 - In the opened browser window, enter the full filepath of your video or audio file.
-  ![FilepathInput](./2_AddFilepath.png)
+  ![FilepathInput](./assets/2_AddFilepath.png)
 - Type or paste the complete filepath and click the `Process & Upload` button.
 
 ### Processing & Email Notifications
