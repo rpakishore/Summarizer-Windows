@@ -27,6 +27,7 @@
   - [Feedback](#feedback)
 
 ---
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1. Getting Started Guide / Instructions of Use
 
@@ -34,6 +35,12 @@
 - Locate the `LaunchApp.bat` file in the app folder.
   ![](./assets/1_LaunchApp.png)
 - Double-click the `LaunchApp.bat` file to launch the application in your default web browser.
+
+**NOTE**
+- If this is the first time Launching the application it will install uv to set up python environment. The script will auto close on completion. You will have to re-run the file again
+- The First run of the application will take longer (~20 seconds), to set up the necessary packages. All further launches should be faster (< 2 seconds).
+- If you run into "**Windows Protected Your PC**" warning, see section [4. Common Issues \& Solutions](#4-common-issues--solutions) for solution.
+
 
 ### Using the App
 - In the opened browser window, enter the full filepath of your video or audio file.
